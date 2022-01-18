@@ -147,24 +147,29 @@ knowledge = Knowledge()
 optimize_words!(words, knowledge)
 show_state(words, knowledge) # best starting words...
 
-update!(knowledge, "arose", "NWNWC")
+update!(knowledge, "arose", "NCCNN")
 remove_impossible_words!(words, knowledge)
 optimize_words!(words, knowledge)
 show_state(words, knowledge)
 
-update!(knowledge, "surge", "CNWNC")
+update!(knowledge, "crown", "NCCNN")
 remove_impossible_words!(words, knowledge)
 optimize_words!(words, knowledge)
 show_state(words, knowledge)
 
-update!(knowledge, "shire", "CCCCC")
+update!(knowledge, "tromp", "NCCNW")
 remove_impossible_words!(words, knowledge)
 optimize_words!(words, knowledge)
 show_state(words, knowledge)
 
-#update!(knowledge, "panic", "CCCCC")
-#remove_impossible_words!(words, knowledge)
-#optimize_words!(words, knowledge)
-#show_state(words, knowledge)
+update!(knowledge, "proud", "CCCNN")
+remove_impossible_words!(words, knowledge)
+optimize_words!(words, knowledge)
+show_state(words, knowledge)
+
+update!(knowledge, "proxy", "CCCCC")
+remove_impossible_words!(words, knowledge)
+optimize_words!(words, knowledge)
+show_state(words, knowledge)
 
 # won
